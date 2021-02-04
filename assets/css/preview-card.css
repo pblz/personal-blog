@@ -1,0 +1,32 @@
+.preview{
+    grid-area:prev;
+    padding:15px;
+    background:  rgba(244, 244, 245, 0.829);;
+    border: 3px solid blue;
+    margin-bottom:20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "title"
+    "subtitle"
+    "prev";
+    grid-gap: 1px
+}
+.preview a{
+    color:blue;
+}
+
+.preview-title{
+    grid-area: title;
+}
+
+.preview-subtitle{
+    grid-area: subtitle;
+    font-style: italic;
+}
+
+.preview-txt{
+    grid-area: prev;
+}
