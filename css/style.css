@@ -1,0 +1,38 @@
+body{
+    font-size:18px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    background: #000a12;
+    padding: 12px;
+    color:whitesmoke
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+h1{
+    font-size:70px;
+}
+
+.navbar{
+    grid-area: nav;
+    display: flex;
+    flex-direction:row;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.nav-button{
+    width: auto;
+    height: 20px;
+    background:  rgba(176, 161, 241, 0.2);
+    border: 2px solid blue;
+    margin:10px;
+}
+

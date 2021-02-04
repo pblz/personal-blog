@@ -1,0 +1,11 @@
+.preview{
+    grid-area:prev;
+    padding:15px;
+    background:  rgba(244, 244, 245, 0.829);;
+    border: 3px solid blue;
+    margin-bottom:20px;
+    overflow: hidden;
+}
+.preview a{
+    color:blue;
+}

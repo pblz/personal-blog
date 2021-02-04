@@ -1,0 +1,89 @@
+@import "style.css"; 
+@import "blog-post-card.css"; 
+@import "preview-card.css";
+
+a:link, a:visited{
+    display:inline-block;
+    text-decoration:none;
+    color: #000a12
+}
+
+/* small screen style*/
+.container{
+    display:grid;
+    grid-template-columns:90%;
+    grid-template-rows: 25px 50px 250px 400px 300px 50px 1fr 25px;
+    grid-template-areas: 
+    "hd"
+    "nav"
+    "tt"
+    "main"
+    "prev"
+    "nav2"
+    "coll"
+    "ft";
+    padding:12px;
+    background-color:#000a12;
+    color: white;
+  }
+
+  /* Medium Screens */
+  @media (min-width: 900px) {
+    .container {
+        height: 100vh;
+    /* rules for medium-sized and large screen*/
+    grid-template-columns:20px 50px 300px 5px 1fr;
+    grid-template-rows: 25px 50px 250px 200px 200px 100px 50px 1fr 15px;
+    grid-template-areas: 
+    "hd hd hd hd hd"
+    "nav nav nav nav nav"
+    "tt tt tt tt tt"
+    "main main main main main"
+    "main main main main main"
+    "prev prev prev prev prev"
+    "nav2 nav2 nav2 nav2 nav2"
+    "coll coll coll coll coll"
+    "ft ft ft ft ft "
+    }
+    .content{
+        grid-area: 4/1/6/6;
+    }
+    .preview{
+        grid-area: 5/3/7/4;
+    }
+}
+
+.header{
+    grid-area: hd;
+}
+
+.title-section{
+    grid-area: tt;
+}
+
+.footer{
+  grid-area: ft;
+  text-align: center;
+}
+
+.categories{
+    grid-area:nav2;
+    margin: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.post-collection{
+    grid-area:coll;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.content{
+    grid-area:main;
+    background-image: url("../img/hellow.jpg");
+    background-size: cover;
+}

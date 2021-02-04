@@ -1,0 +1,75 @@
+@import "style.css"; 
+@import "author-info-card.css";
+
+/* Small Screen */
+.container{
+  display:grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 25px 50px auto auto auto 15px;
+  grid-template-areas: 
+  "hd"
+  "nav"
+  "tt"
+  "main" 
+  "auth"
+  "ft";
+ border: 2px solid blue;
+ width: 80vw;
+ margin:15px;
+ padding: 15px;
+ }
+
+/* Medium or Large Screen */
+@media (min-width: 900px) {
+.container{
+   display:grid;
+   grid-template-columns: 60% 35% ;
+   grid-template-rows: 25px 50px auto auto 15px;
+   grid-template-areas: 
+   "hd hd"
+   "nav nav"
+   "tt tt"
+   "main auth"
+   "ft ft";
+  border: 2px solid blue;
+  width: 80vw;
+  margin:15px;
+  padding: 15px;
+  }
+}
+  
+.header{
+      grid-area: hd;
+}
+
+a{
+  display:inline-block;
+  text-decoration:none;
+  color: hotpink;
+}
+
+.navbar{
+  grid-area: nav;
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.title-section{
+    grid-area: tt;
+}
+
+.content{
+  grid-area: main;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+.footer{
+  grid-area: ft;
+  text-align: center;
+  color: blue;
+}
+
+

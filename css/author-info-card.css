@@ -1,0 +1,14 @@
+.author-info{
+    padding: 30px;
+    grid-area: auth;
+    border: 2px solid white;
+  }
+  
+  .author-info img{
+    width:100%
+  }
+  
+  .author-info figcaption{
+    text-align: end
+  }
+  
